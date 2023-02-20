@@ -2,8 +2,6 @@
 import { ref } from "vue";
 // -- donnée réactive pour la saisie du libellé
 const libelle = ref("");
-const quantite= 0;
-const prix = 0;
 
 const emit = defineEmits(["addC"]);
 </script>
@@ -11,8 +9,8 @@ const emit = defineEmits(["addC"]);
 <template>
   <form @submit.prevent="$emit('addC', libelle,quantite,prix)">
     <input type="text" v-model="libelle" placeholder="Entrez un titre" />
-    <input type="text" v-model="quantite" placeholder="La quantité ?" />
-    <input type="text" v-model="prix" placeholder="Prix ?" />
+    <input type="text" v-model="quantite" placeholder="La quantité" />
+    <input type="text" v-model="prix" placeholder="Prix" />
     <input type="submit" value="valider" />
   </form>
 

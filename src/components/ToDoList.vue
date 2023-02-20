@@ -4,6 +4,7 @@ import ToDoListItem from "./ToDoListItem.vue";
 import ToDoForm from "./ToDoForm.vue";
 import ToDoForm2 from "./ToDoForm2.vue";
 import Livre from "../Livre";
+import ToDoFooter from "./ToDoFooter.vue";
 
 const listeC = reactive([]);
 
@@ -187,6 +188,8 @@ onMounted(() => {
       @enleverC="handlerSupprimer"
     />
   </ul>
+<br><br><br>
+  <ToDoFooter></ToDoFooter>
 
 </template>
 

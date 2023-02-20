@@ -71,5 +71,5 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F9ECE9;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
